@@ -1,0 +1,133 @@
+ .landing-page {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  
+}
+
+
+html, body {
+  font-family: 'DM Sans', sans-serif;
+  text-transform: uppercase;
+  background-color: #D9D9D9;
+  
+}
+
+
+.logo{
+  align-self: center;
+  width: 80vw;
+  margin-top: 10vh;
+  margin-bottom: 4vh;
+  z-index: 2;
+}
+@media (max-width: 780px) {
+  .logo {
+    width: 100vw;
+    
+  }
+}
+
+
+.ficciones{
+  display: none;
+  overflow: hidden;
+  z-index: 1000;
+  position: absolute;
+  top: 5vh;
+  left: 90vw;
+  width: 20vw;
+  border-radius: 50%;
+    
+  }
+
+  
+
+.dj{
+  display: none;
+  z-index: 999;
+  position: fixed;
+    width: 20vw;
+    top: -5vh;
+    left: -5vw;
+    border-radius: 50%;
+  }
+
+.nubes{
+  display: none;
+  z-index: 1000;
+    position: absolute;
+    width: 20vw;
+    top: -5vh;
+    left: -5vw;
+  }
+  
+  
+
+  
+  
+  
+ .marquee {
+  height: 100px;
+  background-color: #003588;
+  padding: 0 10px;
+  color: #f37138;
+ }
+
+
+ .marquee-child{
+  margin: 20px;
+  font-size: 1.5rem;
+ }
+.tres-circulos{
+  margin-top: 7%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0;
+  padding-right: 0;
+  max-width: 1240px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* centra los elementos en el contenedor */
+  gap: 20px;
+  z-index: 2;
+  
+  
+}
+
+.circulo {
+  width: calc((100% - 40px) / 3); /* Ajusta el tamaño de cada círculo */
+  height: auto; /* Ajusta la altura automáticamente para mantener las proporciones */
+  max-width: 400px; /* Establece un límite máximo para el ancho del círculo */
+  
+ 
+}
+
+@media (max-width: 768px) {
+  .circulo {
+    width: calc((100% - 20px) / 2); /* Ajusta el tamaño para dos círculos en pantallas más pequeñas */
+  }
+
+  .circulo:last-child {
+    display: none; /* Oculta el último círculo cuando la pantalla tiene un ancho máximo de 768 píxeles */
+  }
+}
+
+@media (max-width: 480px) {
+  .circulo {
+    width: calc(100% - 20px); /* Ajusta el tamaño para un solo círculo en pantallas aún más pequeñas */
+  }
+
+.gif{
+  width: 30%;
+}
+
+.dj{
+  width: 30%;
+  top: 40vh;
+    
+}
+  
+}
+
+

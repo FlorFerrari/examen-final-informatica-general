@@ -1,0 +1,90 @@
+.project{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 100px 50px 100px;
+    border-top: 1px solid rgb(201, 201, 201);
+    transition: all 0.2s;
+    
+    
+}
+.project:last-of-type{
+    border-bottom: 1px solid rgb(201, 201, 201);
+}
+
+.project:hover h2{
+    opacity: 0.5;
+}
+
+.project:hover p{
+    opacity: 0.5;
+}
+
+
+.project:hover h2{
+    transform: translateX(-10px);
+}
+
+.project:hover p{
+    transform: translateX(10px);
+}
+
+
+.project h2{
+    margin: 0px;
+    font-weight: 400;
+    transition: all 0.4s;
+}
+
+.project p{
+    transition: all 0.4s;
+    font-weight: 300;
+    
+}
+
+
+.project img {
+    opacity: 0; /* Inicialmente establecer la opacidad en 0 para ocultar la imagen */
+    border-radius: 50%;
+    height: 0;
+ 
+}
+
+.project:hover img {
+    height: 200px;
+    opacity: 1;
+    transition: opacity 0.8s; 
+}
+
+
+
+@media (max-width: 1670px) {
+    .project:hover img {
+        height: 200px;
+        opacity: 1;
+        transition: opacity 0.8s; 
+    }
+    .project h2{
+        font-size: 1rem;
+    }
+    
+    .project p{
+        font-size: 0.5rem;
+        
+    }
+  }
+
+  @media (max-width: 600px) {
+    .project:hover img {
+        height: 100px;
+        opacity: 1;
+        transition: opacity 0.8s; 
+    }
+    .project{
+        justify-content: space-between;
+        padding: 50px 20px;
+        
+        
+    }
+    
+  }

@@ -1,0 +1,40 @@
+
+.navBar-container1 {
+    z-index: 1000;
+
+    margin-top: 2%;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-left: 0px;
+    padding-right: 0px;
+    position: fixed;
+    top: 0%;
+    bottom: auto;
+    left: 0%;
+    right: 0%;
+    backdrop-filter: blur(2px);
+    border: 1px solid #F37138;
+    border-radius: 100px;
+    
+}
+
+
+.navBar-content {
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 0%;
+    margin-right: 0;
+    padding: 15px;
+    
+
+    
+    
+}
+
+@media (max-width: 1000px) {
+    
+  
+  }
+  

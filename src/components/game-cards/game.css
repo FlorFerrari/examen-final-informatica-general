@@ -1,0 +1,156 @@
+
+  .game-cards {
+    padding: 2em;
+    max-width: 600px;
+  }
+  
+  .read-the-docs {
+    color: #888;
+  }
+  
+  
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
+  }
+ul li {
+    border: solid 1px gray;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #fff;
+  }
+ul li img {
+    width: 80px;
+  }
+  
+input {
+    outline: none;
+    font-size: inherit;
+    padding: 7px;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    width: 160px;
+  }
+  
+  
+  
+  li .content {
+    position: relative;
+    width: 105px;
+    height: 105px;
+  }
+  .front, .back{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    place-content: center;
+    backface-visibility: hidden;
+    transition: .4s;
+  }
+  .front {
+    transform: perspective(200px) rotateY(0deg);
+  }
+  .back {
+    transform: perspective(200px) rotateY(180deg);
+  }
+  .flip-front {
+    transform: perspective(200px) rotateY(180deg);
+  }
+  .flip-back {
+    transform: perspective(200px) rotateY(0deg);
+  }
+  
+  /* timer */
+  .timer {
+    margin: 20px 0;
+  }
+  .timer h3 {
+    font-size: 30px;
+  }
+  .timer h3 span {
+    padding-right: 7px;
+    font-size: 40px;
+  }
+  /* input */
+  input.warning {
+    border: 2px solid tomato;
+  
+  }
+  
+  /* cards */
+  .cards {
+    margin-top: 20px;
+  }
+  .cards h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  /* buttons */
+  .buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    position: relative;
+  }
+  
+  /* ranking */
+  .ranking {
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 20px;
+    border: 2px solid #7FBFFF;
+    padding: 5px 20px;
+    border-radius: 5px;
+  
+    max-height: 185px;
+    overflow: auto;
+  }
+  .ranking .item {
+    display: flex;
+    justify-content: space-between;
+    padding: 1px 0;
+    /* background-color: #7FBFFF; */
+  }
+  .ranking .item:not(:last-child) {
+    border-bottom: 1px solid #7FBFFF;
+  }
+  .ranking .item span {
+    font-weight: 500;
+  }
+  /* scroll */
+  ::-webkit-scrollbar {
+    width: 3px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #B9DBFE;
+    border-radius: 5px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #7FBFFF;
+    /* border-radius: 15px; */
+  }
+  .error {
+    position: absolute;
+    top: 35px;
+    color: #2893ff;
+    font-weight: 500;
+    font-size: 14px;
+  }
+  
+  /* author */
+  p.author {
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+    gap: 7px;
+    position: relative;
+  }
+  p.author a {
+    text-decoration: none;
+    font-weight: 500;
+  }
