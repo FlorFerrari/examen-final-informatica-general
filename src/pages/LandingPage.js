@@ -12,7 +12,7 @@ import nubesgif from "../img/landingPage/nubes-gif.gif"
 import buenosaires from "../img/landingPage/buenosaires.gif"
 
 
-import logo from "../img/logos/logo_amancay_flor.png"
+import logo from "../img/logos/logo_amancay_blanco.png"
 import VideoBackground from "../components/VideoBackground/videoBackground";
 
 const LandingPage  = () => {

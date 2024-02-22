@@ -1,29 +1,22 @@
+
  .landing-page {
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  
 }
-
-
-html, body {
-  font-family: 'DM Sans', sans-serif;
-  text-transform: uppercase;
-  background-color: #D9D9D9;
-  
-}
-
 
 .logo{
   align-self: center;
   width: 80vw;
-  margin-top: 10vh;
-  margin-bottom: 4vh;
-  z-index: 2;
+  z-index: 6;
 }
+
 @media (max-width: 780px) {
   .logo {
+    position: absolute;
     width: 100vw;
+    top: 40%;
+    
     
   }
 }

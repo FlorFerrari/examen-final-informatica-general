@@ -10,3 +10,19 @@
 h1{
     background-color: aqua;
 }
+
+  
+@media (max-width: 780px) {
+    #bg-video{
+        
+        width: 100vw;
+        height: 100vh;
+        position: cover;
+        top: 0;
+        left: 0;
+        z-index: 5;
+    }
+  
+    
+  }
+  
