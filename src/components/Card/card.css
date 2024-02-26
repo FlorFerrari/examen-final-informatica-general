@@ -10,6 +10,7 @@
     border-radius: 5px;
     text-align: left;
     
+    
   }
   
   .card-image{
@@ -26,6 +27,15 @@
   
   }
   
-  .card-text{
+  .card-text {
     font-size: 1rem;
+    margin-bottom: 50px;
+  }
+
+  .iconos{
+    
+    display: flex;
+    justify-content: space-around;
+    margin-top: auto;
+    
   }

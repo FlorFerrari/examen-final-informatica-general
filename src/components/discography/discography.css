@@ -1,0 +1,44 @@
+
+.discography-container{
+   
+    max-width: 1240px;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    
+  
+}
+
+.discography-titles{
+
+width: 50%;
+}
+
+.discography-image{
+display: flex;
+
+width: 50%;
+justify-content: center;
+
+}
+.discography-info{
+border: 1px solid #000;
+  border-radius: 100px;
+display: flex;
+flex-direction: column;
+
+padding: 80px;
+justify-content: space-around;
+gap: 70px;
+
+}
+.discography-image img{
+ 
+
+width: 100%;
+object-fit: cover;
+
+}

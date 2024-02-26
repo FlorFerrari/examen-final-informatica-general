@@ -1,6 +1,4 @@
 import React from 'react';
-
-
 import "./mainContainer.css"
 
 const MainContainer =({title= null, text = null , text2 = null , image = null})=>{

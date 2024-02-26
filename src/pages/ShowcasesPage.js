@@ -1,6 +1,7 @@
 import React from "react";
 import MainContainer from "../components/MainContainer/MainContainer";
-
+import Showcases from "../components/showcases/Showcases";
+import Button from "../components/Button/Button";
 
 const ShowcasesPage  = () => {
 
@@ -19,11 +20,11 @@ const ShowcasesPage  = () => {
          creación de las hojas las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de
         autoedición, 
          como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum."  />
-
-
+        <Button text="Próximas fechas" link="/nextdates"/> 
+        <Showcases />
          
-
-
+        
+        
    
       
         </div>

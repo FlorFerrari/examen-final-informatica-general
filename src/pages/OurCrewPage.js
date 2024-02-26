@@ -10,54 +10,57 @@ import djolee from "../img/ourCrew/djolee.jpg"
 import golden from "../img/ourCrew/golden.jpg"
 
 
-
-
 const OurCrewPage  = () => {
 
     const artists = [
         {
           name: 'Agustin Giri',
-          description: 'Meet Agustin, a seasoned electronic music producer and DJ with over a decade of experience. His mastery of techno beats has been shaping the electronic music scene, creating an immersive experience for enthusiasts worldwide.',
+          description: 'Conoce a Agustín, un experimentado productor de música electrónica y DJ con más de una década de experiencia. Su dominio de los ritmos de techno ha estado moldeando la escena de la música electrónica, creando una experiencia envolvente para entusiastas de todo el mundo.',
           image: agustin,
+          instagram: 'https://www.iconfinder.com/search?q=spotify+icon',
+          spotify: 'https://www.iconfinder.com/search?q=spotify+icon'
+          
         },
         {
             name: 'Francisco Gracía',
-            description: 'Discover the rhythmic world of Francisco, an electronic music maestro with a rich history of both producing and DJing. With a unique blend of Afrobeat influences, Francisco brings a vibrant and eclectic energy to the dance floor, captivating audiences for over 7 years.',
+            description: 'Descubre el mundo rítmico de Francisco, un maestro de la música electrónica con una rica historia tanto en la producción como en la mezcla como DJ. Con una mezcla única de influencias de Afrobeat, Francisco aporta una energía vibrante y ecléctica a la pista de baile, cautivando a audiencias durante más de 7 años.',
             image: frangar,
           },
           {
             name: 'Tiello',
-            description: 'Step into the house music realm with Tiello, a DJ and producer who has been crafting infectious beats for a solid decade. Tiello signature house sound is a testament to his unwavering dedication to the genre, creating an atmosphere that resonates with fans globally.',
+            description: 'Sumérgete en el mundo de la música house con Tiello, un DJ y productor que ha estado creando ritmos contagiosos durante una década sólida. El distintivo sonido house de Tiello es un testimonio de su dedicación inquebrantable al género, creando una atmósfera que resuena con los fanáticos a nivel mundial.',
             image: tiello,
           },
           {
             name: 'Last men on Earth',
-            description: 'Join Last men on Earth, a pioneering force in the electronic music scene, collectively bringing a decade of expertise to both production and DJing. Specializing in techno, Last men collaboratively crafts intense and atmospheric tracks, pushing the boundaries of sonic exploration as a dynamic musical partnership.',
+            description: 'Únete a Last Men on Earth, una fuerza pionera en la escena de la música electrónica, aportando colectivamente una década de experiencia tanto en la producción como en la mezcla como DJ. Especializados en techno, Last Men crea de manera colaborativa pistas intensas y atmosféricas, empujando los límites de la exploración sonora como una asociación musical dinámica.',
             image: lastmen,
           },
           {
             name: 'Djolee',
-            description: 'Embrace the groove with Djolee, a tech house virtuoso who has been shaping the electronic landscape for over 8 years. As a seasoned producer and DJ, Djolee brings a dynamic fusion of rhythms, ensuring an unforgettable experience on the dance floor.',
+            description: 'Abraza el ritmo con Djolee, un virtuoso del tech house que ha estado dando forma al panorama electrónico durante más de 8 años. Como productor y DJ experimentado, Djolee aporta una fusión dinámica de ritmos, garantizando una experiencia inolvidable en la pista de baile.',
             image: djolee,
           },
           {
             name: 'Golden Hour',
-            description: 'Dive into the sonic universe of Golden Hour, a tech house sensation who has been making waves in the industry for 6 years. As both a skilled producer and DJ, he seamlessly blends cutting-edge sounds, creating an electrifying journey for music enthusiasts worldwide.',
+            description: 'Sumérgete en el universo sonoro de Golden Hour, una sensación del tech house que ha estado causando sensación en la industria durante 6 años. Como hábil productor y DJ, fusiona sin esfuerzo sonidos vanguardistas, creando un viaje electrizante para los entusiastas de la música en todo el mundo.',
             image: golden,
           },
         
       ];
 
     return (
-      
-        <div className="basic-styles">
-          <MainContainer title="3. OUR CREW" text="We explore different styles, but function as a cohesive team. We invite you to get to know us!" />
+      <div className="basic-styles">
+
+          <MainContainer title="3. Nuestra crew" text="Exploramos diferentes estilos, pero funcionamos como un equipo cohesionado. ¡Te invitamos a conocernos!" />
 
             {artists.map((artist, index) => (
-        <Card key={index} name={artist.name} text={artist.description} image={artist.image} />
-      ))}
+                <Card key={index} name={artist.name} text={artist.description} image={artist.image} instagram={artist.instagram} spotify={artist.spotify}/>
+            ))}
+
       <Button text="toma clases con nosotros" link="/classes"/>
-        </div>
+
+      </div>
     )
 }
 

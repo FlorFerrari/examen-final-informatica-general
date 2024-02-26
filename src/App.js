@@ -15,6 +15,7 @@ import ClassesPage from "./pages/ClassesPage";
 import PressPage from "./pages/PressPage"
 import MusicPlayerPage from "./pages/MusicPlayerPage";
 import GamePage from "./pages/GamePage";
+import NextDatesPage from "./pages/NextDatesPage";
 
 import { Routes, Route } from "react-router-dom";
 
@@ -22,10 +23,12 @@ import "./styles/styles.css"
 import React from "react";
 import AnimatedCursor from "react-animated-cursor"
 
+import { ParallaxProvider } from 'react-scroll-parallax';
 
 function App() {
   return (
     <div className="App">
+      <ParallaxProvider>
       <Navbar/>
       
       <AnimatedCursor innerSize={10}
@@ -61,6 +64,7 @@ function App() {
         <Route path="classes" element={<ClassesPage />}/>
         <Route path="press" element={<PressPage />}/>
         <Route path="game" element={<GamePage />}/>
+        <Route path="nextdates" element={<NextDatesPage />}/>
 
         
 
@@ -68,6 +72,7 @@ function App() {
       </Routes>
       
       <Footer/>
+      </ParallaxProvider>
     </div>
   );
 }

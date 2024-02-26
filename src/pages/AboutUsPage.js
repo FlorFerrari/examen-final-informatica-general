@@ -4,13 +4,15 @@ import MainContainer from "../components/MainContainer/MainContainer";
 import Button from "../components/Button/Button";
 import giri from "../img/landing-image2.jpeg"
 
+import "./../styles/styles.css"
+
 const AboutUsPage  = () => {
 
     const info = [
         {
-          title: '2. About us',
-          text: 'Amancay is a collective of Argentine artists and producers associated with electronic music. It was born in 2021 from a shared vision, a way of perceiving electronic music and music production in general. The space is comprised of Agustin Giri, Emiliano Demarco, Nicolas Parrado, This & That, Xolef, Marvio, Tiello, LKNV, Last Men On Earth, CCINNI, Djolee, and Francisco García. Amancay functions as a record label. Its goal is to release one album per year, featuring a song from each of the artists. In February 2024, we launched FICCIONES III, our latest compilation. ',
-          text2: "We offer classes in music production and DJing. Additionally, we organize showcases worldwide. We invite you to reach out to us; we love receiving new proposals and getting to know other artists!",
+          title: '2. Sobre Nosotros',
+          text: 'Amancay es un colectivo de artistas y productores argentinos vinculados a la música electrónica. Nació en 2021 a partir de una visión en común, de una forma de percibir la música electrónica y la producción musical en general. El espacio está compuesto por Agustin Giri, Emiliano Demarco, Nicolas Parrado, This & That, Xolef, Marvio, Tiello, LKNV, Last Men On Earth, CCINNI, Djolee, y Francisco García. ',
+          text2: "Amancay funciona como “sello discográfico”. Su objetivo es editar un disco por año en el que se incluya una canción de cada uno de los artistas. En 2023 estaremos editando el volumen tres.",
           image: giri,
         },
     ]
@@ -18,7 +20,12 @@ const AboutUsPage  = () => {
     return (
         <section className="basic-styles">
             <MainContainer title={info[0].title} text={info[0].text} text2={info[0].text2} image={giri}/>
-            <Button text="Press" link="/press"/> 
+            <MainContainer text={info[0].text} text2={info[0].text2}/>
+            <div className="container-description-button">
+            <p>Querés sabes más sobre nosotros? Enterate las últimas novedades de Amancay acá</p>
+            <Button text="Prensa" link="/press"/> 
+             </div>
+            
         </section>
     )
 }

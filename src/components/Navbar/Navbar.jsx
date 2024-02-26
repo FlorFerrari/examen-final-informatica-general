@@ -7,14 +7,13 @@ import "../Navbar/navBar.css"
 const Navbar=()=>{
     return (    
         <div className="navBar-container1">
-                    
-                        <div className="navBar-content">
-                            <div>
-                                <Link to="/">Home</Link>
-                            </div>
-                            <div>
-                                <Link to="/aboutus">About Us</Link>
-                            </div>
+            <div className="navBar-content">
+                <div>
+                    <Link to="/">Home</Link>
+                </div>
+                <div>
+                    <Link to="/aboutus">About Us</Link>
+                </div>
                             <div>
                                 <Link to="/ourcrew">Our Crew</Link>
                             </div>
@@ -30,13 +29,11 @@ const Navbar=()=>{
                             <div>
                                 <Link to="/contactus">Contact Us</Link>
                             </div>
-                            
-                            
-                           
-                            
-                       
-                    </div>
+                         
+            </div>
         </div>
+
+        
     )
 
 }

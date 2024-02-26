@@ -7,6 +7,7 @@ import "../../components/game-cards/game.css"
 
 let size = 3;
 let clicks = 0;
+let level = 1;
 
 export default function GameCards() {
 
@@ -18,6 +19,7 @@ export default function GameCards() {
     
 
     const handleClick = (item, index) => {
+        clicks = clicks +1;
         if (selected.length < 2 ) {
             setSelected(selected => selected.concat(item))
         }
@@ -38,9 +40,12 @@ export default function GameCards() {
 
     useEffect(() => {
         if(opened.length === images.length) {
+            calculateScore()
             size = size +2;
             clearArrays()
             setImages(getImages(size))
+
+            level = level+1;
         }
     }, [opened]) 
 
@@ -50,6 +55,23 @@ export default function GameCards() {
         setSelected([]);
         
         
+    }
+
+    const calculateScore = () => {
+        const passLevel = size * 10;
+        let total = score.current;
+        const cards = size * 2;
+        if (clicks === cards) {
+            total = total + (cards * 2) + passLevel
+        } else if(clicks > cards && clicks < cards + 5){
+            total = total + cards + passLevel
+        } else if(clicks > cards + 5 && clicks < cards + 10) {
+            total = total + cards / 2 + passLevel
+        } else {
+            total = total + Math.round(cards / 3) + passLevel
+        }
+        clicks = 0;
+        score.current = total;
     }
 
     console.log("opened.length---->", opened.length)
@@ -64,7 +86,9 @@ export default function GameCards() {
 
   return (
     <div className="game-cards">
-        <h2>Score: 10</h2>
+        <h2>Score: {score.current}</h2>
+        <h2>Nivel: {+ level}</h2>
+
         <ul>
 
         

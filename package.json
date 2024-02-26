@@ -12,10 +12,12 @@
     "@testing-library/user-event": "^13.5.0",
     "react": "^18.2.0",
     "react-animated-cursor": "^2.11.2",
+    "react-countdown": "^2.3.5",
     "react-dom": "^18.2.0",
     "react-fast-marquee": "^1.6.3",
     "react-router-dom": "^6.21.3",
     "react-scripts": "5.0.1",
+    "react-scroll-parallax": "^3.4.5",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
