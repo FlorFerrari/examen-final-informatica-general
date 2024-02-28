@@ -2,9 +2,12 @@ import React from "react";
 
 import MainContainer from "../components/MainContainer/MainContainer";
 import Marquee from "react-fast-marquee";
-import ficciones3 from "../img/landingPage/cuadrado.gif"
+
 import DiscographyCards from "../components/discography/DiscographyCards"
 
+import ficciones3 from "../img/discography/tapa-ficcionesIII.jpg"
+import ficciones2 from "../img/discography/ficciones2.jpg"
+import ficciones1 from "../img/discography/ficcionesI.jpg"
 const DiscographyPage  = () => {
 
     const info = [
@@ -27,6 +30,28 @@ const DiscographyPage  = () => {
                 
               
         },
+        {
+            
+            title: 'FICCIONES II',
+            description: 'Nuestro último lanzamiento, compuesto de 14 temas. Inspirados en la frenética ciudad de Buenos Aires. Podés comprarlo en beatport.',
+            image: ficciones2,
+            songs: ["hola - abuk", "chau - agus", "loro", "chau"],
+            link: 'www.google.com'
+            
+                    
+                  
+            },
+            {
+            
+                title: 'FICCIONES I',
+                description: 'Nuestro último lanzamiento, compuesto de 14 temas. Inspirados en la frenética ciudad de Buenos Aires. Podés comprarlo en beatport.',
+                image: ficciones1,
+                songs: ["hola - abuk", "chau - agus", "loro", "chau"],
+                link: 'www.google.com'
+                
+                        
+                      
+                },
     ]
 
     return (
@@ -41,6 +66,8 @@ const DiscographyPage  = () => {
         </Marquee>
 
         <DiscographyCards title={discography[0].title} description={discography[0].description} songs={discography[0].songs} image={discography[0].image}/>
+        <DiscographyCards title={discography[1].title} description={discography[1].description} songs={discography[1].songs} image={discography[1].image}/>
+        <DiscographyCards title={discography[2].title} description={discography[2].description} songs={discography[2].songs} image={discography[2].image}/>
 
 
         </>

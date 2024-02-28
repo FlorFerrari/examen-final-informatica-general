@@ -17,15 +17,15 @@ button {
 }
 
 h1 {
-  font-size: 5rem;
-}
-
-h2 {
   font-size: 4rem;
 }
 
+h2 {
+  font-size: 3rem;
+}
+
 p{
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 
@@ -66,14 +66,29 @@ a:active {
     display: flex;
     flex-direction: column;
     max-width: 90vw;
-    margin: 200px auto 200px auto;
+    margin: 100px auto 200px auto;
     
   }
 
 .container-description-button{
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  justify-content: center;
   border: 1px solid #000;
-    border-radius: 0px;
+  border-radius: 100px;
+  margin-top: 50px;
+  padding: 50px;
+
+  
 }
+
+.container-description-button p{
+  margin-bottom: 50px;
+  text-align: center;
+  
+}
+
 
 /* -------------------------------------------> MEDIA QUERIES */
 

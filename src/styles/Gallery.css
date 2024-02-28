@@ -1,0 +1,45 @@
+.App {
+    text-align: center;
+  }
+  
+  .galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  
+  .foto-contenedor {
+    position: relative;
+    margin: 10px;
+    overflow: hidden;
+    background-color: aqua;
+    height: fit-content;
+  }
+  
+  .foto {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .titulo {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .foto-contenedor:hover .foto {
+    transform: scale(1.1);
+  }
+  
+  .foto-contenedor:hover .titulo {
+    opacity: 1;
+  }
+  

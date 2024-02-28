@@ -5,42 +5,40 @@
     padding: 50px 100px 50px 100px;
     border-top: 1px solid rgb(201, 201, 201);
     transition: all 0.2s;
-    
-    
+    background-color: aliceblue;
+
 }
+
 .project:last-of-type{
     border-bottom: 1px solid rgb(201, 201, 201);
 }
-
-.project:hover h2{
-    opacity: 0.5;
-}
-
-.project:hover p{
-    opacity: 0.5;
-}
-
-
-.project:hover h2{
-    transform: translateX(-10px);
-}
-
-.project:hover p{
-    transform: translateX(10px);
-}
-
-
 .project h2{
-    margin: 0px;
-    font-weight: 400;
+   
     transition: all 0.4s;
+    font-size: 2rem !important;
 }
 
 .project p{
     transition: all 0.4s;
-    font-weight: 300;
+    opacity: 0;
+    font-size: 1rem !important;
+    max-width: 250px;
     
 }
+
+
+.project:hover h2{
+    opacity: 0.5;
+    transform: translateX(-10px);
+}
+
+.project:hover p{
+    opacity: 0.5;
+    /* transform: translateX(10px); */
+}
+
+
+
 
 
 .project img {
@@ -56,6 +54,24 @@
     transition: opacity 0.8s; 
 }
 
+
+.project .info{
+    justify-self: center;
+    transition: all 0.4s;
+    opacity: 1;
+    font-size: 1rem !important;
+    
+}
+.project:hover .info {
+    opacity: 0;
+    
+}
+
+
+.description .description-title{
+    font-weight: bold;
+    
+}
 
 
 @media (max-width: 1670px) {

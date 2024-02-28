@@ -16,6 +16,7 @@ import PressPage from "./pages/PressPage"
 import MusicPlayerPage from "./pages/MusicPlayerPage";
 import GamePage from "./pages/GamePage";
 import NextDatesPage from "./pages/NextDatesPage";
+import GalleryPage from "./pages/Gallery";
 
 import { Routes, Route } from "react-router-dom";
 
@@ -65,6 +66,7 @@ function App() {
         <Route path="press" element={<PressPage />}/>
         <Route path="game" element={<GamePage />}/>
         <Route path="nextdates" element={<NextDatesPage />}/>
+        <Route path="gallery" element={<GalleryPage />}/>
 
         
 

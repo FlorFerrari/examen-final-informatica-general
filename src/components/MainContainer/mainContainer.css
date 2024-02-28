@@ -18,7 +18,7 @@
   }
   
   .main-container p{
-    font-family:  'Ubuntu Mono', monospace;
+    /* font-family:  'Ubuntu Mono', monospace; */
     line-height: 40px;
     margin: 2% auto 2% auto;
     padding-left: 0;

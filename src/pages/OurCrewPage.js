@@ -52,14 +52,16 @@ const OurCrewPage  = () => {
     return (
       <div className="basic-styles">
 
-          <MainContainer title="3. Nuestra crew" text="Exploramos diferentes estilos, pero funcionamos como un equipo cohesionado. ¡Te invitamos a conocernos!" />
-
-            {artists.map((artist, index) => (
+          <MainContainer title="3. Nuestra crew" text="Exploramos diferentes estilos, pero funcionamos como un equipo. ¡Te invitamos a conocernos!" />
+          
+          {artists.map((artist, index) => (
                 <Card key={index} name={artist.name} text={artist.description} image={artist.image} instagram={artist.instagram} spotify={artist.spotify}/>
             ))}
 
-      <Button text="toma clases con nosotros" link="/classes"/>
+          <Button text="toma clases con nosotros" link="/classes"/>
 
+
+            
       </div>
     )
 }

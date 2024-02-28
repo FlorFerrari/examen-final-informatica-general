@@ -5,7 +5,7 @@ export default function DiscographyCards({title, description, image, songs, link
   return (
     <div className="discography-container">
             <div className="discography-titles">
-            <h2>→{title}</h2>
+            <h2>{title}</h2>
                 <div className="discography-info">
                 
                 <p>{description}</p>
