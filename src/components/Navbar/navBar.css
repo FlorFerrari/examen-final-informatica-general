@@ -1,7 +1,6 @@
 
-.navBar-container1 {
+.navBar-container {
     z-index: 1000;
-
     margin-top: 2%;
     margin-left: 100px;
     margin-right: 100px;
@@ -15,27 +14,59 @@
     backdrop-filter: blur(2px);
     border: 1px solid #F37138;
     border-radius: 100px;
-    
+    overflow: hidden;
 }
-
-
-.navBar-content {
-    
+  
+  .navBar-content {
     font-size: 1.2rem;
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: left;
     margin-left: 0%;
     margin-right: 0;
     padding: 15px;
-    
+  }
 
-    
-    
-}
-
-@media (max-width: 1000px) {
-    
+  ul li {
+    border: none; 
+    border-radius: 0; 
+    background-color: none; 
+  }
   
+  .open-close {
+    display: none;
+    cursor: pointer;
+  }
+  
+  @media screen and (max-width: 1100px) {
+    .open-close {
+      display: block;
+      position: fixed;
+      top: 15px;
+      right: 15px;
+      z-index: 7;
+    }
+  
+    .navBar-container{
+      height: 0;
+      border: none; 
+    }
+
+    .navBar-containerexpanded{
+      background-color: rgb(39, 61, 157);
+      position: fixed;
+      width: 100vw;
+      height: 100vh;
+      z-index: 6;
+      transition: height 0.5s ease-in-out;
+    }
+
+    .navBar-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center; 
+      margin-top: 20px;
+      gap: 50px;
+    }
   }
   

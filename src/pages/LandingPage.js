@@ -46,9 +46,9 @@ const LandingPage  = () => {
             
             <MainContainer image={giri}/>
 
-            <Parallax rotate={[0, 450]} className="ficciones" >
+           {/*  <Parallax rotate={[0, 450]} className="ficciones" >
             <img src={ficciones} alt="Descripción del GIF" className="gif"/> 
-            </Parallax>
+            </Parallax> */}
             
             <Parallax translateY={['-150px', '100px']}>
             <MainContainer title={info[0].title} text={info[0].text} text2={info[0].text2}/>
