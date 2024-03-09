@@ -5,7 +5,6 @@
     padding: 50px 100px 50px 100px;
     border-top: 1px solid rgb(201, 201, 201);
     transition: all 0.2s;
-    background-color: aliceblue;
 
 }
 
@@ -33,16 +32,12 @@
 }
 
 .project:hover p{
-    opacity: 0.5;
-    /* transform: translateX(10px); */
+    opacity: 1;
+    
 }
 
-
-
-
-
 .project img {
-    opacity: 0; /* Inicialmente establecer la opacidad en 0 para ocultar la imagen */
+    opacity: 0; 
     border-radius: 50%;
     height: 0;
  
@@ -90,17 +85,36 @@
     }
   }
 
-  @media (max-width: 600px) {
-    .project:hover img {
-        height: 100px;
-        opacity: 1;
-        transition: opacity 0.8s; 
-    }
+  @media (max-width: 900px) {
+    
     .project{
+        flex-direction: column;
         justify-content: space-between;
         padding: 50px 20px;
-        
+         
+    }
+
+    .description .description-title{
+        opacity: 1;
         
     }
     
+    .project img {
+        opacity: 1;
+        border-radius: 50%;
+        height: 200px;
+        margin: 10px 0 10px 0;
+     
+    }
+    .project p {
+        opacity: 1;
+        margin: 10px 0 10px 0;
+        
+     
+    }
+
+    .info{
+       
+        height: 0;
+}
   }

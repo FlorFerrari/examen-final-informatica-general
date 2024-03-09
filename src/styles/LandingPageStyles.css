@@ -1,9 +1,7 @@
-
- .landing-page {
+.landing-page {
   display: flex;
   flex-direction: column;
   overflow: hidden;
- 
 }
 
 .logo{
@@ -12,15 +10,11 @@
   z-index: 1;
 }
 
-
 .ficciones{
   position: absolute;
   top: 80%;
   left: 80%;
-  z-index: 11;
-  
-  
-  
+  z-index: 11; 
 }
 
 .gif{
@@ -28,12 +22,6 @@
   border-radius: 100%;
 }
 
-  
-  
-
-  
-  
-  
  .marquee {
   height: 100px;
   background-color: #003588;
@@ -42,11 +30,11 @@
   z-index: 3;
  }
 
-
  .marquee-child{
   margin: 20px;
   font-size: 1.5rem;
  }
+
 .tres-cuadrados{
   margin-top: 7%;
   margin-left: auto;
@@ -56,28 +44,26 @@
   max-width: 1240px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* centra los elementos en el contenedor */
+  justify-content: center; 
   gap: 20px;
   z-index: 2;
-  
-  
 }
 
 .cuadrado {
-  width: calc((100% - 40px) / 3); /* Ajusta el tamaño de cada círculo */
-  height: auto; /* Ajusta la altura automáticamente para mantener las proporciones */
-  max-width: 400px; /* Establece un límite máximo para el ancho del círculo */
+  width: calc((100% - 40px) / 3); 
+  height: auto; 
+  max-width: 400px; 
   
  
 }
 
 @media (max-width: 768px) {
-  .circulo {
-    width: calc((100% - 20px) / 2); /* Ajusta el tamaño para dos círculos en pantallas más pequeñas */
+  .cuadrado {
+    width: calc((100% - 20px) / 2); 
   }
 
-  .circulo:last-child {
-    display: none; /* Oculta el último círculo cuando la pantalla tiene un ancho máximo de 768 píxeles */
+  .cuadrado:last-child {
+    display: none;
   }
   .ficciones{
     position: absolute;
@@ -93,11 +79,13 @@
 }
 
 @media (max-width: 480px) {
-  .circulo {
-    width: calc(100% - 20px); /* Ajusta el tamaño para un solo círculo en pantallas aún más pequeñas */
+  .cuadrado {
+    width: calc(100% - 20px); 
   }
 
-
+  .logo{
+    margin: 10vh 0 10vh 0;
+  }
   
 }
 

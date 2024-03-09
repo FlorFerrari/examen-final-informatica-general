@@ -42,23 +42,23 @@ p{
 }
 
 a:link { 
-    text-decoration: none; 
+    text-decoration: none !important; 
     color: #F37138;
   } 
 
 a:visited { 
-    text-decoration: none; 
+    text-decoration: none !important; 
     color: #F37138;
   } 
 
 a:hover { 
     
-    color: #F37138;
+    color: #F37138 !important;
     
   } 
 
 a:active { 
-    text-decoration: none; 
+    text-decoration: none !important; 
     color: #F37138;
     
   }
@@ -91,6 +91,30 @@ a:active {
   
 }
 
+.game-section{
+  
+  background-color: #cec1bb;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.boton-comenzar{
+  background-color: rgb(57, 94, 42);
+  width: 50%;
+  position: relative;
+  margin: 20px auto 0 auto;
+  
+  
+}
+.boton-reiniciar{
+  background-color: rgb(190, 130, 41);
+  width: 50%;
+  position: relative;
+  margin: 20px auto 0 auto;
+  
+  
+}
 
 /* -------------------------------------------> MEDIA QUERIES */
 

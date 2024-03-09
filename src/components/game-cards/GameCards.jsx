@@ -4,25 +4,30 @@ import { getImages } from '../../helpers/getImages'
 
 import amancay from "../../img/game/amancay-game.jpg"
 import "../../components/game-cards/game.css"
-
+import PopUp from "../popUp/PopUp"
 let size = 3;
 let clicks = 0;
 let level = 1;
 
-export default function GameCards() {
+export default function GameCards({start, showPopup, setShowPopup}) {
 
     const [images, setImages] = useState(getImages(size))
     const [selected, setSelected] = useState([])
     const [opened, setOpened] = useState([])
 
-    const score = useRef(0);
-    
+    /* const [showPopup, setShowPopup] = useState(false); */
+
+    const score = useRef(80);
+    console.log("START", start)
 
     const handleClick = (item, index) => {
-        clicks = clicks +1;
-        if (selected.length < 2 ) {
+        if (start) {
+            clicks = clicks +1;
+            if (selected.length < 2 ) {
             setSelected(selected => selected.concat(item))
         }
+        }
+        
   
     }
 
@@ -86,15 +91,14 @@ export default function GameCards() {
 
   return (
     <div className="game-cards">
-        <h2>Score: {score.current}</h2>
-        <h2>Nivel: {+ level}</h2>
+        <h2 className='puntaje'>Puntaje: {score.current}</h2>
 
-        <ul>
+        <ul className='game-ul'>
 
         
         {
             images.map((item, index) => (
-                <li key={index} onClick={() => handleClick(item, index)}>
+                <li className="game-li" key={index} onClick={() => handleClick(item, index)}>
                     <div className="content">
                         {include = selected.includes(item) || opened.includes(item)} 
                         <div className={`front ${include ? 'flip-front' : ''  }`}>
@@ -110,6 +114,9 @@ export default function GameCards() {
         }
 
         </ul>
+         {showPopup ? (
+        <PopUp score={score.current} onClose={() => { setShowPopup(false); window.location.reload(); }} />
+      ) : ""} 
     </div>
   )
 }

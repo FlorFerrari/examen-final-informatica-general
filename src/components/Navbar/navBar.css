@@ -1,11 +1,10 @@
 
 .navBar-container {
-    z-index: 1000;
+    z-index: 998;
+    max-width: 1240px;
     margin-top: 2%;
-    margin-left: 100px;
-    margin-right: 100px;
-    padding-left: 0px;
-    padding-right: 0px;
+    margin-left: auto;
+    margin-right: auto;
     position: fixed;
     top: 0%;
     bottom: auto;
@@ -27,11 +26,12 @@
     padding: 15px;
   }
 
-  ul li {
-    border: none; 
-    border-radius: 0; 
-    background-color: none; 
+  li{
+    background-color: none !important;
+    border: none !important;
   }
+
+ 
   
   .open-close {
     display: none;

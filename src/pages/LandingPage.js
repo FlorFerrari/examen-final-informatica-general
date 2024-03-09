@@ -28,20 +28,11 @@ const LandingPage  = () => {
     return (
         <div className="landing-page">
             
-         
-            
-           
            <img src={logo} className="logo" alt="Amancay logo" />
            
-            
-            
-
             <Marquee autoFill="true"  className="marquee">
-                <p className="marquee-child">Musica</p>
                 <p className="marquee-child">Amancay</p>
                 <p className="marquee-child">Sound Collective</p>
-                <p className="marquee-child">Clases</p>
-                <p className="marquee-child">Production</p> 
             </Marquee>
             
             <MainContainer image={giri}/>
