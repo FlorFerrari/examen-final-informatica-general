@@ -5,10 +5,16 @@
     overflow: hidden;
 }
 
+:root {
+  --blue: #003588;
+  --orange: #F37138;
+  --beige: #D9D9D9;
+}
+
 html, body {
     font-family: 'DM Sans', sans-serif;
     text-transform: uppercase;
-    background-color: #D9D9D9;
+    background-color: var(--beige);
     
 
 }
@@ -19,11 +25,11 @@ button {
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 p{
@@ -43,23 +49,23 @@ p{
 
 a:link { 
     text-decoration: none !important; 
-    color: #F37138;
+    color: var(--orange);
   } 
 
 a:visited { 
     text-decoration: none !important; 
-    color: #F37138;
+    color: var(--orange);
   } 
 
 a:hover { 
     
-    color: #F37138 !important;
+    color: var(--orange) !important;
     
   } 
 
 a:active { 
     text-decoration: none !important; 
-    color: #F37138;
+    color: var(--orange);
     
   }
 
@@ -93,14 +99,16 @@ a:active {
 
 .game-section{
   
-  background-color: #cec1bb;
+  padding: 20px;
+  border: var(--blue) 3px solid;
+  border-radius: 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
 .boton-comenzar{
-  background-color: rgb(57, 94, 42);
+  
   width: 50%;
   position: relative;
   margin: 20px auto 0 auto;
@@ -108,7 +116,7 @@ a:active {
   
 }
 .boton-reiniciar{
-  background-color: rgb(190, 130, 41);
+  
   width: 50%;
   position: relative;
   margin: 20px auto 0 auto;
@@ -120,13 +128,13 @@ a:active {
 
 @media (max-width: 780px) {
   h1{
-    font-size: 3rem;
+    font-size: 2rem;
   }
   h2{
-    font-size: 3rem;
+    font-size: 1.5rem;
   }
   p{
-    font-size: 1.5rem;
+    font-size: 0.8rem;
   }
   .card-styles {
     width: 100%; 

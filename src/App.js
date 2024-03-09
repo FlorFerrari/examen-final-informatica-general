@@ -23,7 +23,7 @@ import { Routes, Route } from "react-router-dom";
 
 import "./styles/styles.css"
 import React from "react";
-import AnimatedCursor from "react-animated-cursor"
+/* import AnimatedCursor from "react-animated-cursor" */
 
 import { ParallaxProvider } from 'react-scroll-parallax';
 
@@ -34,7 +34,7 @@ function App() {
       <ParallaxProvider>
       <Navbar/>
       
-      <AnimatedCursor innerSize={10}
+      {/* <AnimatedCursor innerSize={10}
       outerSize={15}
       color='243, 112, 56'
       outerAlpha={0.2}
@@ -54,7 +54,7 @@ function App() {
         '.link'
       ]}
       
-     />
+     /> */}
       <Routes>
         <Route path="/" element={<LandingPage />}/>
         <Route path="aboutus" element={<AboutUsPage />}/>

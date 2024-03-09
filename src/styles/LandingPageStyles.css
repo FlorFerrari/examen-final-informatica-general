@@ -10,21 +10,22 @@
   z-index: 1;
 }
 
-.ficciones{
+/* .ficciones{
   position: absolute;
   top: 80%;
-  left: 80%;
+  left: 5px;
   z-index: 11; 
+  width: 200px;
+  
 }
 
 .gif{
-  width: 300px;
-  border-radius: 100%;
-}
+  
+} */
 
  .marquee {
   height: 100px;
-  background-color: #003588;
+  background-color: var(--blue);
   padding: 0 10px;
   color: #f37138;
   z-index: 3;

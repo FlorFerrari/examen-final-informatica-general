@@ -28,7 +28,7 @@ const Timer = ({ start, setStart, setShowPopup }) => {
     <div className="timer">
     <p>Tiempo:</p>
       <Countdown
-        date={Date.now() + 1000}
+        date={Date.now() + 60000}
         renderer={(props) => <Counter props={props} />}
         onComplete={handleEnd}
         autoStart={false}

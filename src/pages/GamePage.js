@@ -1,5 +1,3 @@
-
-
 import { React, useState } from "react";
 import "../styles/styles.css";
 import MainContainer from "../components/MainContainer/MainContainer";
@@ -19,7 +17,8 @@ const GamePage = () => {
   return (
     <section className="basic-styles">
         
-      <MainContainer title="juga al memotest con amancay" text="ganate una totebag" />
+      <MainContainer title="Jugá al memotest con amancay" text="Superá 200 puntos y ganate una Totebag de Amancay! Las reglas son sencillas: Encontrá la mayor cantidad de imagenes pares. Da vuelta primero una imagen y luego otra, tratando
+      de que sean pares.  Si las figuras no coinciden se volverán a dar vuelta en la misma ubicación que tenían. A medida que avances en el juego, el nivel de dificultad aumentarás. Tenes 60 segundos para jugar! Pro tip: A menor cantidad de clicks, mayor puntaje!" />
 
       <div className="game-section">
 

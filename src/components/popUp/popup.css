@@ -7,29 +7,27 @@
     right: 0;
     width: 100vw;
     height: 100vh;
-    background-color: rgba(237, 221, 221, 0.854); /* Fondo oscuro semi-transparente */
+    background-color: var(--blue);
     justify-content: center;
-    
-    z-index: 999; /* Asegura que esté sobre otros elementos */
-  
-    /* Estilos adicionales para el contenido interno */
-    
-    color: #000000; /* Color del texto, ajusta según tus preferencias */
+    z-index: 999; 
+    color: #000000; 
   }
 .popup-content{
-    background-color: rgb(171, 166, 159);
+    background-color: var(--beige);
     display: flex;
     align-self: center;
+    justify-content: center;
     flex-direction: column;
     gap: 50px;
     width: 50%;
     padding: 100px;
     border: 1px solid #000000;
     border-radius: 100px;
-    
+    p{
+      text-align: center;
+    }
 }
   .button-popup{
-    background-color: aquamarine;
     align-self: center;
     width: 10%;
   }

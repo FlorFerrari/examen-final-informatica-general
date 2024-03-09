@@ -1,8 +1,8 @@
 
-  .game-cards {
+.game-cards {
     padding: 2em;
     max-width: 600px;
-  }
+}
   
 
 .game-ul {
@@ -53,6 +53,7 @@
   
  
   .puntaje {
+    align-self: center;
     font-size: 20px;
     margin: 50px;
   }

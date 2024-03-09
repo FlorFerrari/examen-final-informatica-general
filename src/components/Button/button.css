@@ -1,14 +1,11 @@
-
 button{
     font-size: 1.5rem;
-    backdrop-filter: blur(2px);
     border: 1px solid #000000;
     border-radius: 100px;
     display:flex;
     justify-content: center;
-
+    margin-top: 40px;
     padding: 15px 100px;
-    
     background-color: transparent; 
 }
 
@@ -20,6 +17,11 @@ button:hover{
 a {
     display: flex;
     justify-content: center;
-    width: auto;
-    
+    width: auto;  
+}
+
+@media (max-width: 780px) {
+    button{
+        font-size: 0.8rem;
+    }
 }

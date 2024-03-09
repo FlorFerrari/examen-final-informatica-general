@@ -4,8 +4,6 @@ import MainContainer from "../components/MainContainer/MainContainer";
 import Button from "../components/Button/Button";
 
 /* ----------> images */
-import djolee from "../img/ourCrew/djolee.jpg"
-import remera from "../img/merch/remera.jpg"
 import shirt from "../img/merch/shirt.png"
 import totebag from "../img/merch/totebag.png"
 import hoodie from "../img/merch/hoodie.png"
@@ -14,41 +12,30 @@ const OurCrewPage  = () => {
 
     const merch = [
         {
-          name: 'Tote bag',
-          description: 'Esta remera blanca de algodon organico es lo mas lindo que sentiras en tu vida sobre tu suave piel ahre',
+          name: 'Totebag',
+          description: 'La Totebag de Amancay tiene toda la onda. Práctica, liviana y lista para acompañarte a donde vayas! Hecha con los mejores materiales. ARS 8.000',
           image: totebag,
         },
         {
             name: 'Amancay Hoodie',
-            description: 'Esta remera blanca de algodon organico es lo mas lindo que sentiras en tu vida sobre tu suave piel ahre',
+            description: 'Buzo canguro en rústico liso con bordado en el delantero. Prenda lavada. La composición es 70% algodón 30% poliester. El modelo usa talle M. Disponible en talle XS, S, M, L y XL. ARS 35.000',
             image: hoodie,
           },
           {
             name: 'Amancay T-shirt',
-            description: 'Esta remera blanca de algodon organico es lo mas lindo que sentiras en tu vida sobre tu suave piel ahre',
+            description: 'Remera manga corta de Jersey de algodón,  estampada con serigrafía tradicional en el frente. La composición es 100% algodón agroecológico. El modelo usa talle M. Disponible en talle XS, S, M, L y XL. ARS 20.000',
             image: shirt,
-          },
-          {
-            name: 'djolee',
-            description: 'HOLA me llamo agustin giri y soy productor y dj de musica electronica',
-            image: remera,
-          },
-          {
-            name: 'remera',
-            description: 'HOLA me llamo agustin giri y soy productor y dj de musica electronica',
-            image: remera,
           },
         
       ];
 
     return (
         <div className="basic-styles">
-            <MainContainer title="6. MERCH" text="Crafted by Argentinians using top-quality Argentine raw materials. 
-Send us an email with the product you love, and showcase Amancay's style anywhere in the world. " />
+            <MainContainer title="SHOP" text="Elaborado por argentinos con materias primas de alta calidad de Argentina. Envíanos un correo electrónico con el producto que te más te guste y mostrá el estilo de Amancay en cualquier parte del mundo." />
             {merch.map((merch, index) => (
         <Card key={index} name={merch.name} text={merch.description} image={merch.image} />
       ))}
-      <Button text="Juga al memotest para ganarte una totebak" link="/game"/> 
+      <Button text="Juga al memotest y ganate una totebag de Amancay!" link="/game"/> 
         </div>
     )
 }

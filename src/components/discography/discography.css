@@ -1,74 +1,72 @@
 
 .discography-container{
-  background:rgb(31, 30, 30);
+  background:var(--blue);
   border-radius: 100px;
-    margin-top: 50px;
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 1000px;
-    justify-content: space-between;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 4rem;
-
-
-  
-    
-  
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1240px;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 4rem;
 }
+
 .discography-container a{
-  
   color: rgb(255, 255, 255);
   text-decoration: underline;
- 
-  
 }
 
 .discography-titles{
   color: rgb(255, 255, 255);
-
-width: 50%;
-
+  width: 50%;
 }
 
 .discography-titles h2{
-  text-align: center;
-  
-  }
+text-align: center;
+}
 
 .discography-image{
 display: flex;
 width: 50%;
 justify-content: center;
-
-
+align-self: center;
 }
+
 .discography-info{
-
-
 border: 1px solid #ffffff;
-  border-radius: 100px;
+border-radius: 100px;
 display: flex;
 flex-direction: column;
-
 padding: 80px;
 justify-content: space-around;
 gap: 70px;
 margin: 1rem;
-
 }
+
 .discography-image img{
   align-self: center;
   height: fit-content;
   object-fit: contain;
   width: 300px;
-  
   border-radius: 10px;
   transition: all 0.4s;
 }
+
 .discography-image:hover img{
   scale: 1.05;
   opacity: 0.8;
   transition: all 0.4s;
-
 }
+
+@media (max-width: 1100px){
+  .discography-titles{
+    width: 100%;
+  }
+
+  .discography-image{
+    margin-top: 30px;
+  }
+}
+
+ 

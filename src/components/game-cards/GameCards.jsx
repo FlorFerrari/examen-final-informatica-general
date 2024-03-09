@@ -15,12 +15,10 @@ export default function GameCards({start, showPopup, setShowPopup}) {
     const [selected, setSelected] = useState([])
     const [opened, setOpened] = useState([])
 
-    /* const [showPopup, setShowPopup] = useState(false); */
+    const score = useRef(0);
+    
 
-    const score = useRef(80);
-    console.log("START", start)
-
-    const handleClick = (item, index) => {
+    const handleClick = (item) => {
         if (start) {
             clicks = clicks +1;
             if (selected.length < 2 ) {
@@ -79,15 +77,9 @@ export default function GameCards({start, showPopup, setShowPopup}) {
         score.current = total;
     }
 
-    console.log("opened.length---->", opened.length)
-    console.log("images.lenght---->", images.length)
+    
     
     let include = false;
-
-
-    console.log("selected--->", selected)
-    console.log("opened--->", opened)
-
 
   return (
     <div className="game-cards">

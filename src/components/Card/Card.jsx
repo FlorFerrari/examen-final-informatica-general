@@ -14,10 +14,16 @@ const Card =({name, text, image, instagram, spotify })=>{
                 <p className='card-text'>{text}</p> 
                 <div className="iconos">
                     <div className="instagram">
-                    <a href={instagram} target="_blank"><img src={instagramIcon} alt="instagram icon" /></a>
+                        {instagram?
+                         <a href={instagram} target="_blank"><img src={instagramIcon} alt="instagram icon" /></a>
+                          : "" }
+                    
                     </div>
                     <div className="spotify">
-                            <a href={spotify} target="_blank"><img src={spotifyIcon} alt="spotify icon" /></a>
+                        {spotify ? 
+                        <a href={spotify} target="_blank"><img src={spotifyIcon} alt="spotify icon" /></a> 
+                        : "" }
+                            
                     </div>
                 </div>
             </div>

@@ -1,4 +1,3 @@
-
 .main-container {
     flex-direction: column;
     width: 100vw; 
@@ -6,8 +5,7 @@
     z-index: 2;
   }
   
-  
-  .main-container h2{
+.main-container h2{
     font-weight: 300;
     margin-top: 100px;
     margin-left: auto;
@@ -15,35 +13,30 @@
     padding-left: 0;
     padding-right: 0;
     max-width: 1240px;
-  }
+}
   
-  .main-container p{
-    /* font-family:  'Ubuntu Mono', monospace; */
+.main-container p{
     line-height: 40px;
     margin: 2% auto 2% auto;
     padding-left: 0;
     padding-right: 0;
     max-width: 1240px;
-  }
-  .main-container-image{
+}
+
+ .main-container-image{
     width: 100%;
     height: 800px;
-   object-fit: cover;
-    
-    
-  }
+    object-fit: cover;
+}
 
   
 @media (max-width: 1240px) {
-    
-  
+
     .main-container  {
       display: flex;
       flex-direction: column;
       align-items: center;
       width: 100vw;
-      
-      
     }
   
     .main-container-image {
@@ -51,12 +44,11 @@
   }
 
   .main-container h2{
-    margin-left: 40px;
+    margin-left: 20px;
   }
   .main-container p{
-    margin-left: 40px;
+    margin-left: 20px;
   }
-  
-  
-  }
+
+}
   

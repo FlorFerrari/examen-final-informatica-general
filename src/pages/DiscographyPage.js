@@ -9,11 +9,12 @@ import DiscographyCards from "../components/discography/DiscographyCards"
 import ficciones3 from "../img/discography/tapa-ficcionesIII.jpg"
 import ficciones2 from "../img/discography/ficciones2.jpg"
 import ficciones1 from "../img/discography/ficcionesI.jpg"
+
 const DiscographyPage  = () => {
 
     const info = [
         {
-          title: '4. DISCOGRAPHY',
+          title: 'DISCOGRAPHY',
           text: 'Desde 2022, una vez por año sale un nuevo compilado de Amancay. Ficciones III es el último lanzamiento, inspirado en la frenética ciudad de Buenos Aires. Te invitamos a escucharlos y a ser parte de esta revolución sonora Argentina.',
           image: null,
         },     
@@ -59,7 +60,7 @@ const DiscographyPage  = () => {
         <DiscographyCards title={discography[1].title} description={discography[1].description} songs={discography[1].songs} image={discography[1].image} link={discography[1].link}/>
         <DiscographyCards title={discography[2].title} description={discography[2].description} songs={discography[2].songs} image={discography[2].image} link={discography[2].link}/>
 
-        <Button text="Descubri nuestros sets en vivo" link="/videos"/> 
+        <Button text="Escucha nuestros sets en vivo" link="/videos"/> 
 
         </>
     )
