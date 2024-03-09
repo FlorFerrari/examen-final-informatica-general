@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/styles.css"
 import MainContainer from "../components/MainContainer/MainContainer";
+import Button from "../components/Button/Button";
 
 const ContactUsPage  = () => {
 
@@ -15,6 +16,8 @@ const ContactUsPage  = () => {
     return (
         <section className="basic-styles">
             <MainContainer title={info[0].title} text={info[0].text}/>
+            <Button text="Sobre la creadora" link="/aboutme"/> 
+
         </section>
     )
 }

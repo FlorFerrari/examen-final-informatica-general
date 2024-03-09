@@ -2,6 +2,7 @@ import React from "react";
 
 import MainContainer from "../components/MainContainer/MainContainer";
 import Marquee from "react-fast-marquee";
+import Button from "../components/Button/Button";
 
 import DiscographyCards from "../components/discography/DiscographyCards"
 
@@ -58,6 +59,7 @@ const DiscographyPage  = () => {
         <DiscographyCards title={discography[1].title} description={discography[1].description} songs={discography[1].songs} image={discography[1].image} link={discography[1].link}/>
         <DiscographyCards title={discography[2].title} description={discography[2].description} songs={discography[2].songs} image={discography[2].image} link={discography[2].link}/>
 
+        <Button text="Descubri nuestros sets en vivo" link="/videos"/> 
 
         </>
     )

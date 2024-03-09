@@ -16,7 +16,8 @@ import PressPage from "./pages/PressPage"
 import MusicPlayerPage from "./pages/MusicPlayerPage";
 import GamePage from "./pages/GamePage";
 import NextDatesPage from "./pages/NextDatesPage";
-import GalleryPage from "./pages/Gallery";
+import VideosPage from "./pages/VideosPage";
+import AboutMePage from "./pages/AboutMePage";
 
 import { Routes, Route } from "react-router-dom";
 
@@ -25,6 +26,7 @@ import React from "react";
 import AnimatedCursor from "react-animated-cursor"
 
 import { ParallaxProvider } from 'react-scroll-parallax';
+
 
 function App() {
   return (
@@ -66,7 +68,9 @@ function App() {
         <Route path="press" element={<PressPage />}/>
         <Route path="game" element={<GamePage />}/>
         <Route path="nextdates" element={<NextDatesPage />}/>
-        <Route path="gallery" element={<GalleryPage />}/>
+        <Route path="videos" element={<VideosPage />}/>
+        <Route path="aboutme" element={<AboutMePage />}/>
+        
 
         
 
