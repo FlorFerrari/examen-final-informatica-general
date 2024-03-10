@@ -16,13 +16,15 @@ const Card =({name, text, image, instagram, spotify })=>{
                     <div className="instagram">
                         {instagram?
                          <a href={instagram} target="_blank"><img src={instagramIcon} alt="instagram icon" /></a>
+                          // eslint-disable-next-line 
                           : "" }
                     
                     </div>
                     <div className="spotify">
                         {spotify ? 
                         <a href={spotify} target="_blank"><img src={spotifyIcon} alt="spotify icon" /></a> 
-                        : "" }
+                       // eslint-disable-next-line 
+                       : "" }
                             
                     </div>
                 </div>

@@ -28,10 +28,11 @@ export default function DiscographyCards({title, description, image, songs, link
                 </ol>
 
                 <a href={link} target="_blank">Compralo ahora</a>
+                // eslint-disable-next-line 
                 </div>
             </div>
             <div className="discography-image">
-                <img src={image}></img>
+                <img src={image} alt="Portada album"></img>
             </div>
         </div>
   )

@@ -1,5 +1,5 @@
 
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef } from 'react';
 import Countdown from 'react-countdown';
 import "../../components/timer/timer.css"
 
@@ -10,7 +10,7 @@ const Timer = ({ start, setStart, setShowPopup }) => {
   
 
   const handleEnd = () => {
-    console.log("TERMINOOOOOOO----------", )
+    
     setShowPopup(true)
     setStart(false);
     
