@@ -15,15 +15,15 @@ const Card =({name, text, image, instagram, spotify })=>{
                 <div className="iconos">
                     <div className="instagram">
                         {instagram?
-                         <a href={instagram} target="_blank"><img src={instagramIcon} alt="instagram icon" /></a>
-                          // eslint-disable-next-line 
+                         <a href={instagram} target="_blank" rel="noreferrer"><img src={instagramIcon} alt="instagram icon" /></a>
+                          
                           : "" }
                     
                     </div>
                     <div className="spotify">
                         {spotify ? 
-                        <a href={spotify} target="_blank"><img src={spotifyIcon} alt="spotify icon" /></a> 
-                       // eslint-disable-next-line 
+                        <a href={spotify} target="_blank" rel="noreferrer"><img src={spotifyIcon} alt="spotify icon" /></a> 
+                       
                        : "" }
                             
                     </div>

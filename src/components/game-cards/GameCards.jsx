@@ -50,7 +50,7 @@ export default function GameCards({start, showPopup, setShowPopup}) {
 
             level = level+1;
         }
-    }, [opened]) 
+    }, [opened, images.length]) 
 
     const clearArrays = () => {
         console.log("holaaa")
