@@ -27,8 +27,8 @@ export default function DiscographyCards({title, description, image, songs, link
                    
                 </ol>
 
-                <a href={link} target="_blank">Compralo ahora</a>
-                // eslint-disable-next-line 
+                <a href={link} target="_blank" rel="noreferrer">Compralo ahora</a>
+                
                 </div>
             </div>
             <div className="discography-image">

@@ -6,7 +6,9 @@ import Timer from "../components/timer/Timer";
 
 
 const GamePage = () => {
+  // eslint-disable-next-line 
   const [score, setScore] = useState(0);
+  
   const [showPopup, setShowPopup] = useState(false); 
   const [start, setStart] = useState(false);
 
