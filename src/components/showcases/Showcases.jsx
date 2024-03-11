@@ -12,22 +12,26 @@ import showcase8 from "../../img/showcases/showcase8.jpeg"
 import showcase9 from "../../img/showcases/showcase9.jpeg"
 import showcase10 from "../../img/showcases/showcase10.jpeg"
 
-
+const showcaseImages = [
+  showcase1,
+  showcase2,
+  showcase3,
+  showcase4,
+  showcase5,
+  showcase6,
+  showcase7,
+  showcase8,
+  showcase9,
+  showcase10
+];
 export default function Showcases() {
     return (
-        <div className="showcase">
-          <div className="gallery">
-            <img src={showcase1}alt="Imagen 1" />
-            <img src={showcase2} alt="Imagen 2" />
-            <img src={showcase3} alt="Imagen 3" />
-            <img src={showcase4} alt="Imagen 3" />
-            <img src={showcase5} alt="Imagen 3" />
-            <img src={showcase6} alt="Imagen 3" />
-            <img src={showcase7} alt="Imagen 3" />
-            <img src={showcase8} alt="Imagen 3" />
-            <img src={showcase9} alt="Imagen 3" />
-            <img src={showcase10} alt="Imagen 3" />
-          </div>
-        </div>
+      <div className="showcase">
+      <div className="gallery">
+        {showcaseImages.map((imageName, index) => (
+          <img key={index} src={imageName} alt="Poster del showcase" />
+        ))}
+      </div>
+    </div>
       );
     }
