@@ -1,4 +1,3 @@
-
 import { useEffect, useRef } from 'react';
 import Countdown from 'react-countdown';
 import "../../components/timer/timer.css"
@@ -8,20 +7,16 @@ const Counter = ({ props }) => <span>{props.seconds}</span>;
 const Timer = ({ start, setStart, setShowPopup }) => {
   const timerRef = useRef();
   
-
   const handleEnd = () => {
-    
     setShowPopup(true)
     setStart(false);
     
   };
 
-  useEffect(() => {
+  useEffect(() => {  //si start es true, comienza el juego
     if (start) {
       timerRef.current.start();
     }
-
-    
   }, [start]);
 
   return (
@@ -33,7 +28,8 @@ const Timer = ({ start, setStart, setShowPopup }) => {
         onComplete={handleEnd}
         autoStart={false}
         ref={timerRef}
-      ></Countdown>
+      >
+      </Countdown>
     </div>
   );
 };

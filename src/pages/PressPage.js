@@ -6,14 +6,12 @@ import ficciones3 from "../img/press/tapa-ficcionesIII.jpg"
 import abuk from "../img/press/abuk-press.jpg"
 import peces from "../img/press/peces-Raros-press.jpg"
 
-
-
 const AboutUsPage  = () => {
 
     const press = [
         {
           title: 'Entrevista: El colectivo Amancay habla sobre el lanzamiento de su compilación Ficcionnes III',
-          text: 'Argentinian collective Amancay is an oddity in today’s electronic music landscape. The 14 Argentines which contribute to the project present present a broad yet cohesive sonic range, somewhere between the dreamy harmonies often associated with the country, latin influences in the grooves and hard-hitting drums which light up clubs worldwide. We caught up with the guys a few days before the third instalment of the ‘Ficciones’ V.A, featuring an original creation by each of the collective’s members. WWD: The collective is quite expansive, counting 14 members! Was everyone part of the project from the get-go? Did some join along the journey? Are there other members who work behind the curtain? Big collective indeed. Some of us have known each other for several years because we became friends or shared online forums of electronic music, or gigs from bigger artists that we commonly liked. We started the idea of Amancay after two of the guys jokingly proposed realizing a VA together. At that moment it seemed far-fetched. When we started, we were thirteen artists and after getting to know Nacho, aka Abuk, we gladly added him as our fourteenth teammate.',
+          text: '(INGLÉS) Argentinian collective Amancay is an oddity in today’s electronic music landscape. The 14 Argentines which contribute to the project present present a broad yet cohesive sonic range, somewhere between the dreamy harmonies often associated with the country, latin influences in the grooves and hard-hitting drums which light up clubs worldwide. We caught up with the guys a few days before the third instalment of the ‘Ficciones’ V.A, featuring an original creation by each of the collective’s members. WWD: The collective is quite expansive, counting 14 members! Was everyone part of the project from the get-go? Did some join along the journey? Are there other members who work behind the curtain? Big collective indeed. Some of us have known each other for several years because we became friends or shared online forums of electronic music, or gigs from bigger artists that we commonly liked. We started the idea of Amancay after two of the guys jokingly proposed realizing a VA together. At that moment it seemed far-fetched. When we started, we were thirteen artists and after getting to know Nacho, aka Abuk, we gladly added him as our fourteenth teammate.',
           image: ficciones3,
         },
         {

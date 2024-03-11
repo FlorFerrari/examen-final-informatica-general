@@ -8,7 +8,6 @@ import "../styles/LandingPageStyles.css";
 import "../styles/styles.css"
 //Images
 import giri from "../img/landingPage/landing-image1.jpeg"
-import ficciones from "../img/landingPage/cuadrado.gif"
 
 import buenosaires from "../img/landingPage/buenosaires.gif"
 import logo from "../img/logos/logo_amancay_blanco.png"
@@ -18,9 +17,9 @@ const LandingPage  = () => {
    
     const info = [
         {
-          title: '1. Somos Amancay, un colectivo de artistas',
+          title: 'Somos Amancay, un colectivo de artistas',
           text: 'Bienvenidos a un viaje sonoro que trasciende fronteras. Provenientes de Argentina, extendemos nuestras raíces musicales a cada rincón del planeta. Somos Artistas, productores y DJs. Te invitamos a explorar y conocer nuestro mundo.',
-          text2: 'Amancay se propone consolidar su presencia a través de showcases y eventos en diversas ciudades del mundo. Funcionamos como sello discográfico, y tenemos como objetivo llevar nuestro sonido a nuevos lugares, fortaleciendo así nuestro legado en la música electrónica nacional y contemporánea.',
+          text2: 'Desde Amancay nos proponemos consolidar nuestra presencia a través de showcases y eventos en diversas ciudades del mundo. Funcionamos como sello discográfico, y tenemos como objetivo llevar nuestro sonido a nuevos lugares, fortaleciendo así nuestro legado en la música electrónica nacional y contemporánea.',
           image: null,
         },
     ]
@@ -36,10 +35,6 @@ const LandingPage  = () => {
             </Marquee>
             
             <MainContainer image={giri}/>
-
-             <Parallax rotate={[0, 450]} className="ficciones" >
-            <img src={ficciones} alt="Descripción del GIF" /> 
-            </Parallax> 
             
             <Parallax translateY={['-150px', '100px']}>
             <MainContainer title={info[0].title} text={info[0].text} text2={info[0].text2}/>

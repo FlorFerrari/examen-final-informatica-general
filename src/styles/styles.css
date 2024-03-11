@@ -16,7 +16,6 @@ html, body {
     text-transform: uppercase;
     background-color: var(--beige);
     
-
 }
 
 button {
@@ -35,7 +34,6 @@ h2 {
 p{
   font-size: 1.2rem;
 }
-
 
 .basic-styles {
   max-width: 1240px;
@@ -58,17 +56,13 @@ a:visited {
   } 
 
 a:hover { 
-    
     color: var(--orange) !important;
-    
   } 
 
 a:active { 
     text-decoration: none !important; 
-    color: var(--orange);
-    
+    color: var(--orange);  
   }
-
 
   .classes-container{
     display: flex;
@@ -94,11 +88,9 @@ a:active {
 .container-description-button p{
   margin-bottom: 50px;
   text-align: center;
-  
 }
 
 .game-section{
-  
   padding: 20px;
   border: var(--blue) 3px solid;
   border-radius: 100px;
@@ -108,20 +100,17 @@ a:active {
 }
 
 .boton-comenzar{
-  
   width: 50%;
   position: relative;
   margin: 20px auto 0 auto;
   
   
 }
+
 .boton-reiniciar{
-  
   width: 50%;
   position: relative;
   margin: 20px auto 0 auto;
-  
-  
 }
 
 /* -------------------------------------------> MEDIA QUERIES */
@@ -148,5 +137,8 @@ a:active {
     
   }
 
+  *{
+    overflow-y: scroll;
+  }
 }
 

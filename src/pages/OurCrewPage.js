@@ -62,7 +62,7 @@ const OurCrewPage  = () => {
     return (
       <div className="basic-styles">
 
-          <MainContainer title="3. Nuestra crew" text="Exploramos diferentes estilos, pero funcionamos como un equipo. ¡Te invitamos a conocernos!" />
+          <MainContainer title="Nuestro Equipo" text="Exploramos diferentes estilos, pero funcionamos como un equipo. ¡Te invitamos a conocernos!" />
           
           {artists.map((artist, index) => (
                 <Card key={index} name={artist.name} text={artist.description} image={artist.image} instagram={artist.instagram} spotify={artist.spotify}/>

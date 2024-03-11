@@ -45,15 +45,15 @@ const Navbar = () => {
             </li>
 
             <li onClick={handleNavLinkClick}>
-              <NavLink to="/aboutus">About Us</NavLink>
+              <NavLink to="/aboutus">Sobre nosotros</NavLink>
             </li>
 
             <li onClick={handleNavLinkClick}>
-              <NavLink to="/ourcrew">Our Crew</NavLink>
+              <NavLink to="/ourcrew">Equipo</NavLink>
             </li>
 
             <li onClick={handleNavLinkClick}>
-              <NavLink to="/discography">Discography</NavLink>
+              <NavLink to="/discography">Discografía</NavLink>
             </li>
 
             <li onClick={handleNavLinkClick}>
@@ -61,11 +61,11 @@ const Navbar = () => {
             </li>
 
             <li onClick={handleNavLinkClick}>
-              <NavLink to="/merch">Merch</NavLink>
+              <NavLink to="/merch">Shop</NavLink>
             </li>
 
             <li onClick={handleNavLinkClick}>
-              <NavLink to="/contactus">Contact Us</NavLink>
+              <NavLink to="/contactus">Contactanos</NavLink>
             </li>
 
           </ul>

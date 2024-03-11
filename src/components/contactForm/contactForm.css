@@ -33,6 +33,7 @@
     font-size: 1rem;
     padding: 0.5rem;
     border-radius: 10px;
+    border: 0;
   }
   
   .error {
@@ -50,5 +51,6 @@
   .form-button {
     align-self: center;
     margin-top: 50px;
-    background-color: blue;
+    background-color: var(--orange);
+    border: none;
   }

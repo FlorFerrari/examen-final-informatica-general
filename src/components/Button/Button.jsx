@@ -1,5 +1,5 @@
 import React from 'react';
-import "../Button/button.css"
+import "./button.css"
 import { Link } from 'react-router-dom';
 
 const Button =({text, link})=>{

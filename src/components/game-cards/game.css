@@ -36,7 +36,7 @@
     display: grid;
     place-content: center;
     backface-visibility: hidden;
-    transition: .4s;
+    transition: .3s;
   }
   .front {
     transform: perspective(200px) rotateY(0deg);

@@ -42,15 +42,15 @@ const ContactForm = () => {
         const nuevosErrores = { nombre: "", email: "", mensaje: "", };
         let isValid = true;
         if (!nombre) {
-          nuevosErrores.nombre = "Please enter a name";
+          nuevosErrores.nombre = "Por favor, ingresá un nombre";
           isValid = false;
         }
         if (!mensaje) {
-          nuevosErrores.mensaje = "Please enter a message";
+          nuevosErrores.mensaje = "Por favor, ingresá un mensaje";
           isValid = false;
         }
         if (!email || !/^\S+@\S+\.\S+$/.test(email)) {
-          nuevosErrores.email = "Invalid email";
+          nuevosErrores.email = "email inválido";
           isValid = false;
         }
         setErrores(nuevosErrores);
@@ -95,7 +95,7 @@ const ContactForm = () => {
           </div>
           
           <div className='form-section'>
-          <Button type="submit" className="boton-tracklist form-button" > Enviar</Button>
+           <Button type="submit" className="boton-tracklist form-button" > Enviar</Button>
           </div>
         </form>
       )}
