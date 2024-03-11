@@ -8,7 +8,7 @@ const ContactUsPage  = () => {
 
     const info = [
         {
-          title: 'CONTACT US',
+          title: 'Contactanos',
           text: 'Bienvenido a un viaje sonoro que trasciende fronteras. Desde Argentina, extendemos nuestras raíces musicales a cada rincón del planeta. Somos más que artistas, productores y DJs; somos narradores de emociones, arquitectos de melodías que te invitan a descubrir nuestro vibrante universo.',
           image: null,
         },

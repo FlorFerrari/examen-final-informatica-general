@@ -60,7 +60,7 @@ const ContactForm = () => {
   return (
     <div className='estilos-form'>
       {enviado ? (
-        <p>Thanks for contacting us!</p>
+        <p>Gracias por contactarnos!</p>
       ) : (
         <form onSubmit={handleSubmit}>
               <div className='form-section'>
