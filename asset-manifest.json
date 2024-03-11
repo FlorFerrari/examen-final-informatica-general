@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/examen-final-informatica-general/static/css/main.0a3f3459.css",
-    "main.js": "/examen-final-informatica-general/static/js/main.c9ff3285.js",
+    "main.js": "/examen-final-informatica-general/static/js/main.55d18e89.js",
     "static/js/787.62cc06a3.chunk.js": "/examen-final-informatica-general/static/js/787.62cc06a3.chunk.js",
     "static/media/buenosaires.gif": "/examen-final-informatica-general/static/media/buenosaires.2cde1d1ae1bf872a12d9.gif",
     "static/media/landing-image2.jpeg": "/examen-final-informatica-general/static/media/landing-image2.8b65920bd0050bdeb669.jpeg",
@@ -33,11 +33,11 @@
     "static/media/remera-memotest.png": "/examen-final-informatica-general/static/media/remera-memotest.928a53bc1adf5682210c.png",
     "index.html": "/examen-final-informatica-general/index.html",
     "main.0a3f3459.css.map": "/examen-final-informatica-general/static/css/main.0a3f3459.css.map",
-    "main.c9ff3285.js.map": "/examen-final-informatica-general/static/js/main.c9ff3285.js.map",
+    "main.55d18e89.js.map": "/examen-final-informatica-general/static/js/main.55d18e89.js.map",
     "787.62cc06a3.chunk.js.map": "/examen-final-informatica-general/static/js/787.62cc06a3.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0a3f3459.css",
-    "static/js/main.c9ff3285.js"
+    "static/js/main.55d18e89.js"
   ]
 }
